@@ -2,7 +2,7 @@
 
 A monochrome art deco theme for [Obsidian](https://obsidian.md) — black, white, and silver only, no gold. Geometric ornament (chevron dividers, chamfered corners, a sunburst-topped infobox) carries the personality instead of color.
 
-![Gotham theme screenshot](./screenshots/screenshot.png)
+![Gotham theme screenshot](./screenshots/light-mode.png)
 
 ## Features
 
