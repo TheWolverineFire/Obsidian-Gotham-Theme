@@ -1,15 +1,14 @@
-
 /*
   GOTHAM
   A monochrome art deco Obsidian theme.
- 
+
   Design idea: art deco without gold — black, white, and silver only,
   like the city it's named for. Geometric ornament (chevrons, sunbursts,
   chamfered corners) carries the personality instead of color or hue.
   Cinzel Decorative appears once, on the biggest headline in the vault;
   everywhere else stays a plain, legible geometric serif/sans pairing
   so the ornament reads as intentional rather than exhausting.
- 
+
   Fonts (install separately, or the theme falls back to system fonts):
     Cinzel Decorative — hero title only (wikibox, H1 accent)
     Cinzel            — headings
@@ -17,11 +16,11 @@
     Poiret One         — small deco labels
     JetBrains Mono      — code
 */
- 
+
 /* ---------------------------------------------------------------- */
 /* TOKENS                                                            */
 /* ---------------------------------------------------------------- */
- 
+
 .theme-dark {
   --cf-void:        #0a0a0a;
   --cf-surface:      #121212;
@@ -29,30 +28,30 @@
   --cf-raised:       #1c1c1c;
   --cf-raised-alt:   #232323;
   --cf-overlay:      #2c2c2c;
- 
+
   --cf-line:         #3d3d3d;
   --cf-line-bright:  #5c5c5c;
- 
+
   --cf-text-faint:   #6b6b6b;
   --cf-text-muted:   #9a9a9a;
   --cf-text-normal:  #d4d4d4;
   --cf-text-bright:  #f5f5f5;
- 
+
   --cf-glow:         rgba(245, 245, 245, 0.5);
   --cf-glow-soft:     rgba(245, 245, 245, 0.15);
   --cf-selection:    rgba(200, 200, 200, 0.25);
- 
+
   --cf-font-hero:     "Cinzel Decorative", "Cinzel", Georgia, serif;
   --cf-font-display:  "Poiret One", "Montserrat", sans-serif;
   --cf-font-body:     "Poiret One", "Montserrat", sans-serif;
   --cf-font-label:    "Poiret One", "Montserrat", sans-serif;
   --cf-font-mono:     "JetBrains Mono", ui-monospace, monospace;
- 
+
   --text-error: var(--cf-text-bright);
   --text-error-hover: var(--cf-text-normal);
   --cf-text-inverse: var(--cf-void);
 }
- 
+
 .theme-light {
   --cf-void:         #b8b8b8;
   --cf-surface:      #c9c9c9;
@@ -60,34 +59,34 @@
   --cf-raised:       #e2e2e2;
   --cf-raised-alt:   #f2f2f2;
   --cf-overlay:      #c9c9c9;
- 
+
   --cf-line:         #8a8a8a;
   --cf-line-bright:  #5c5c5c;
- 
+
   --cf-text-faint:   #7a7a7a;
   --cf-text-muted:   #4a4a4a;
   --cf-text-normal:  #1a1a1a;
   --cf-text-bright:  #0a0a0a;
- 
+
   --cf-glow:         rgba(10, 10, 10, 0.4);
   --cf-glow-soft:    rgba(10, 10, 10, 0.10);
   --cf-selection:    rgba(60, 60, 60, 0.18);
- 
+
   --cf-font-hero:    "Cinzel Decorative", "Cinzel", Georgia, serif;
   --cf-font-display: "Poiret One", "Montserrat", sans-serif;
   --cf-font-body:    "Poiret One", "Montserrat", sans-serif;
   --cf-font-label:   "Poiret One", "Montserrat", sans-serif;
   --cf-font-mono:    "JetBrains Mono", ui-monospace, monospace;
- 
+
   --text-error: var(--cf-text-bright);
   --text-error-hover: var(--cf-text-normal);
   --cf-text-inverse: var(--cf-raised-alt);
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* CORE MAPPING                                                      */
 /* ---------------------------------------------------------------- */
- 
+
 .theme-dark,
 .theme-light {
   --background-primary: var(--cf-surface);
@@ -104,28 +103,28 @@
   --background-modifier-error: var(--cf-overlay);
   --background-modifier-success: var(--cf-overlay);
   --text-on-accent-inverted: #ffffff;
- 
+
   --titlebar-background: var(--cf-void);
   --titlebar-background-focused: var(--cf-void);
- 
+
   --text-normal: var(--cf-text-normal);
   --text-muted: var(--cf-text-muted);
   --text-faint: var(--cf-text-faint);
   --text-on-accent: var(--cf-void);
   --text-selection: var(--cf-selection);
   --text-highlight-bg: var(--cf-glow-soft);
- 
+
   --text-accent: var(--cf-text-bright);
   --text-accent-hover: var(--cf-text-bright);
   --interactive-accent: var(--cf-overlay);
   --interactive-accent-hover: var(--cf-raised-alt);
   --interactive-normal: var(--cf-raised);
   --interactive-hover: var(--cf-raised-alt);
- 
+
   --font-text: var(--cf-font-body);
   --font-interface: var(--cf-font-body);
   --font-monospace: var(--cf-font-mono);
- 
+
   --h1-color: var(--cf-text-bright);
   --h2-color: var(--cf-text-bright);
   --h3-color: var(--cf-text-bright);
@@ -140,21 +139,21 @@
   --h6-font: var(--cf-font-display);
   --bold-color: var(--cf-text-bright);
   --italic-color: var(--cf-text-normal);
- 
+
   --link-color: var(--cf-text-bright);
   --link-color-hover: var(--cf-text-bright);
   --link-unresolved-color: var(--cf-text-faint);
   --link-decoration: none;
   --link-decoration-hover: underline;
- 
+
   --radius-s: 0px;
   --radius-m: 0px;
   --radius-l: 0px;
   --radius-xl: 0px;
- 
+
   --divider-color: var(--cf-line);
   --divider-color-hover: var(--cf-line-bright);
- 
+
   --code-background: var(--cf-raised);
   --code-normal: var(--cf-text-muted);
   --code-comment: var(--cf-text-faint);
@@ -162,33 +161,33 @@
   --code-property: var(--cf-text-normal);
   --code-keyword: var(--cf-text-bright);
   --code-string: var(--cf-text-muted);
- 
+
   --tag-color: var(--cf-text-muted);
   --tag-background: var(--cf-raised);
   --tag-border-color: var(--cf-line);
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* STRUCTURE — chamfered edges instead of rounded corners            */
 /* ---------------------------------------------------------------- */
- 
+
 .workspace-ribbon,
 .side-dock-ribbon {
   border-right: 1px solid var(--cf-line);
   background: var(--cf-void);
 }
- 
+
 .workspace-tabs.mod-top .workspace-tab-header-container {
   border-bottom: 1px solid var(--cf-line);
   background: var(--cf-void);
 }
- 
+
 .workspace-tab-header {
   border-radius: 0;
   clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%, 0 8px);
   margin-top: 4px;
 }
- 
+
 .mod-root .workspace-tab-header.is-active {
   background: var(--cf-surface);
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
@@ -198,16 +197,16 @@
   position: relative;
   z-index: 1;
 }
- 
+
 .nav-header, .nav-buttons-container {
   border-bottom: 1px solid var(--cf-line);
 }
- 
+
 .nav-file-title-content,
 .nav-folder-title-content {
   font-weight: 600;
 }
- 
+
 /* status bar reads like a diagnostics strip */
 .status-bar {
   background: var(--cf-void);
@@ -217,18 +216,18 @@
   font-size: 11px;
   letter-spacing: 0.02em;
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* TYPOGRAPHY                                                        */
 /* ---------------------------------------------------------------- */
- 
+
 .markdown-source-view.mod-cm6 .cm-line,
 .markdown-preview-view {
   font-family: var(--cf-font-body);
   font-size: 15.5px;
   line-height: 1.65;
 }
- 
+
 .markdown-preview-view h1,
 .markdown-source-view .cm-header-1 {
   font-family: var(--cf-font-display);
@@ -236,7 +235,7 @@
   letter-spacing: 0.02em;
   padding-bottom: 0.3em;
 }
- 
+
 .markdown-preview-view h1::after {
   content: "";
   display: block;
@@ -250,14 +249,14 @@
   background-size: 12px 12px;
   background-repeat: repeat-x;
 }
- 
+
 .markdown-preview-view h2,
 .markdown-source-view .cm-header-2 {
   font-weight: 600;
   letter-spacing: -0.01em;
   padding-bottom: 0.2em;
 }
- 
+
 .markdown-preview-view h2::after {
   content: "";
   display: block;
@@ -271,36 +270,36 @@
   background-size: 10px 10px;
   background-repeat: repeat-x;
 }
- 
+
 .markdown-preview-view h3,
 .markdown-source-view .cm-header-3 {
   font-weight: 500;
 }
- 
+
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6 {
   font-weight: 500;
 }
- 
+
 .metadata-property-key {
   font-family: var(--cf-font-label);
   letter-spacing: 0.06em;
   font-size: 13px;
 }
- 
+
 .metadata-property-value {
   font-family: var(--cf-font-mono);
   font-size: 12.5px;
 }
- 
+
 /* diamond bullets on unordered lists */
 .markdown-preview-view ul > li::marker {
   content: "\25c6  ";
   color: var(--cf-text-muted);
   font-size: 0.7em;
 }
- 
+
 /* chevron horizontal rule — a manual deco scene-break */
 .markdown-preview-view hr {
   border: none;
@@ -315,36 +314,36 @@
   background-repeat: repeat-x;
   background-position: center;
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* CURSOR & SELECTION                                                 */
 /* ---------------------------------------------------------------- */
- 
+
 .cm-s-obsidian .CodeMirror-cursor,
 .cm-cursor-primary {
   border-left: 1.5px solid var(--cf-text-bright);
   box-shadow: 0 0 6px 0 var(--cf-glow);
 }
- 
+
 .cm-active.cm-line {
   background: var(--cf-glow-soft);
 }
- 
+
 ::selection {
   background: var(--cf-selection);
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* CALLOUTS, CHECKBOXES, TAGS                                        */
 /* ---------------------------------------------------------------- */
- 
+
 .callout {
   border: 1px solid var(--cf-line);
   background: var(--cf-raised);
   border-radius: 0;
   clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%, 0 10px);
 }
- 
+
 .markdown-preview-view blockquote {
   border: 1px solid var(--cf-line);
   background: var(--cf-raised);
@@ -352,25 +351,25 @@
   clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%, 0 10px);
   padding: 0.6em 1em;
 }
- 
+
 .callout[data-callout="important"],
 .callout[data-callout="warning"],
 .callout[data-callout="danger"] {
   border-color: var(--cf-line-bright);
   box-shadow: 0 0 0 1px var(--cf-glow-soft) inset;
 }
- 
+
 input[type="checkbox"] {
   border: 1px solid var(--cf-line-bright);
   border-radius: 0;
   background: var(--cf-surface);
 }
- 
+
 input[type="checkbox"]:checked {
   background: var(--cf-text-bright);
   border-color: var(--cf-text-bright);
 }
- 
+
 .tag {
   border-radius: 0;
   font-family: var(--cf-font-mono);
@@ -378,11 +377,11 @@ input[type="checkbox"]:checked {
   letter-spacing: 0.02em;
   padding: 0.05em 0.5em;
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* SCROLLBAR                                                         */
 /* ---------------------------------------------------------------- */
- 
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -395,40 +394,40 @@ input[type="checkbox"]:checked {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--cf-overlay);
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* DESTRUCTIVE ACTIONS — crisp, not washed out                       */
 /* ---------------------------------------------------------------- */
- 
-.menu-item.is-warning.is-warning,
-.menu-item-icon.is-warning.is-warning,
-.menu-item.mod-warning.mod-warning {
+
+.menu .menu-item.is-warning,
+.menu .menu-item-icon.is-warning,
+.menu .menu-item.mod-warning {
   color: var(--text-error);
   font-weight: 700;
 }
- 
-.menu-item.is-warning.is-warning:hover,
-.menu-item.mod-warning.mod-warning:hover {
+
+.menu .menu-item.is-warning:hover,
+.menu .menu-item.mod-warning:hover {
   background-color: var(--background-modifier-error);
   color: var(--text-error-hover);
 }
- 
-.modal-button-container button.mod-warning.mod-warning,
-.modal-button-container button.mod-cta.mod-warning.mod-warning {
+
+.modal .modal-button-container button.mod-warning,
+.modal .modal-button-container button.mod-cta.mod-warning {
   background-color: var(--text-error);
   color: var(--cf-text-inverse);
   font-weight: 700;
   border: none;
 }
- 
-.modal-button-container button.mod-warning.mod-warning:hover {
+
+.modal .modal-button-container button.mod-warning:hover {
   background-color: var(--text-error-hover);
 }
- 
+
 /* ---------------------------------------------------------------- */
 /* GRAPH VIEW                                                        */
 /* ---------------------------------------------------------------- */
- 
+
 .theme-dark .graph-view.color-fill { color: var(--cf-text-muted); }
 .theme-dark .graph-view.color-line { color: var(--cf-line-bright); }
 .theme-dark .graph-view.color-fill-highlight { color: var(--cf-text-bright); }
